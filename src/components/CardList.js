@@ -4,7 +4,9 @@ import Card from './Card'
 function CardList (props) {
  
     function singleCard() {
-        return props.testData.map((person) => <Card  info={person} />)
+        return props.testData.map((person) => <Card {...person} 
+        key={person.name}
+        />)
     }
 
     return(
@@ -16,6 +18,3 @@ function CardList (props) {
 }
 
 export default CardList;
-// const Card = () => {
-
-// }

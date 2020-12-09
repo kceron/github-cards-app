@@ -1,12 +1,12 @@
 import React from 'react';
 
-function Card(props) {
+function Card({name, avatar_url, company} ) {
 
     return(
         <div>
-            <h2>{props.info.name}</h2>
-            <img src={props.info.avatar_url}/>
-            <h4>{props.info.company}</h4>
+            <h2>{name}</h2>
+            <img src={avatar_url}/>
+            <h4>{company}</h4>
         </div>
     );
 }

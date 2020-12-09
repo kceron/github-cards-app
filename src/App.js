@@ -32,7 +32,7 @@ function App() {
   return (
     <div className="App">
       <NavBar handleUserSearch={handleUserSearch}/>
-      <CardList testData={users} />
+      <CardList users={users} />
     </div>
   );
 }

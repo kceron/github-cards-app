@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card({name, avatar_url, company} ) {
+function Card( {name, avatar_url, company} ) {
 
     return(
         <div>
